@@ -7,7 +7,6 @@ The data file to be used is `yellow_tripdata_2022-01.parquet` which contains inf
 # Download Lab files into Google Cloud Console
 
 To get started you will need to download the files in this repository. You can do this either on a local machine, or on a virtual machine, or even the Google Cloud Shell Editor.
-In Google Cloud console:
 
 You will need Git installed. Install instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
@@ -40,7 +39,7 @@ Check Kubernetes nodes are in `Ready` state.
 kubectl get nodes
 ```
 
-> There should be 2 nodes e.g.:
+> There should be a few nodes created e.g.:
 > ![kubectl get nodes](images/kubectl-get-nodes.png "kubectl get nodes")
 
 # InfluxDB
@@ -71,7 +70,7 @@ kubectl get services -n influxdb
 
 The public facing IP for InfluxDB is listed under `EXTERNAL-IP` with port 8086 mapped.
 
-Go to http://<influxdb-ip>:8086
+Go to `http://<influxdb-ip>:8086`
 
 > It could take a few minutes before the UI becomes accessible.
 
